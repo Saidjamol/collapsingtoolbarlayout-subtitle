@@ -15,7 +15,7 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-        maven(REPOSITORIES_OSSRH_SNAPSHOTS)
+//        maven(REPOSITORIES_OSSRH_SNAPSHOTS)
         maven("https://jitpack.io")
     }
 }

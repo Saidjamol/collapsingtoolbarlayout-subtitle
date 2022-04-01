@@ -24,10 +24,6 @@ android {
         }
     }
     buildTypes {
-        all {
-            buildConfigField("String", "RELEASE_GITHUB", "\"$RELEASE_GITHUB\"")
-            buildConfigField("String", "RELEASE_ARTIFACT", "\"$RELEASE_ARTIFACT\"")
-        }
         named("debug") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
@@ -37,9 +33,9 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
-    lint {
-        isAbortOnError = false
-    }
+//    lint {
+//        isAbortOnError = false
+//    }
 }
 
 dependencies {

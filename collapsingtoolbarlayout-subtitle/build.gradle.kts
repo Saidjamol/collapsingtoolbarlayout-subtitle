@@ -1,8 +1,8 @@
 plugins {
     android("library")
     kotlin("android")
-    `maven-publish`
-    signing
+//    `maven-publish`
+//    signing
 }
 
 android {
@@ -60,4 +60,4 @@ tasks {
     }
 }
 
-mavenPublishAndroid(sources = android.sourceSets["main"].java.srcDirs)
+//mavenPublishAndroid(sources = android.sourceSets["main"].java.srcDirs)
